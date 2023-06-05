@@ -1,0 +1,274 @@
+[Installation]
+Product=695
+Configuration=HP2030SU.DLL
+UI=HP2030SU.DLL
+Driver=HP2030SD.DLL
+
+[Units]
+MarginPerInch=300
+MarginPerCM=118     ; 300/2.54
+ExtentPerInch=100
+
+[PrinterName]
+0=HP LaserJet P2033
+1=HP LaserJet P2033n
+2=HP LaserJet P2034
+3=HP LaserJet P2034n
+4=HP LaserJet P2035
+5=HP LaserJet P2035n
+6=HP LaserJet P2036
+7=HP LaserJet P2036n
+8=HP LaserJet P2037
+9=HP LaserJet P2037n
+10=HP LaserJet P2033 XPS
+11=HP LaserJet P2033n XPS
+12=HP LaserJet P2034 XPS
+13=HP LaserJet P2034n XPS
+14=HP LaserJet P2035 XPS
+15=HP LaserJet P2035n XPS
+16=HP LaserJet P2036 XPS
+17=HP LaserJet P2036n XPS
+18=HP LaserJet P2037 XPS
+19=HP LaserJet P2037n XPS
+
+[DefaultPrinter]
+DefaultFeed	=1
+PrintQuality	=600
+MarginEnglish	=47,47,47,47
+MarginMetric	=47,47,47,47
+Formats		=0,1,2,3,4,5,6
+PrintRate	=30
+MediaType	=1
+Papers		=1,5,9,7,258,11,70,13,264,263,265,43,82,20,37,34,28,27
+Media		=1,301,300,303,302,304,258,282,262,283,2,265,513,267,514,515,512,260,516,263
+Capabilities	=1,2,3,4,7,9,10,11,12,13,14,16
+Fields		=1,2,3,4,9,10,11,12,13,16
+Bins		=7,4,1,3,2
+Source		=7
+BinName		=BinNameCassette  
+NUps		=0,2,4,6,9,16
+MinExtent	=300,500
+MaxExtent	=850,1400
+Aspect1		=1
+GCR		=40
+Data1		=0
+Dither		=0
+PlaneMode	=5
+HalftoneKeys	=1,12
+EEDumpLine	=0
+PlaneBuffer	=1
+Data2		=2
+Color		=1
+PixAlignX	=128
+PixAlignY	=4
+SSPR		=1
+Stream		=ZJS
+Compression	=JBIG
+PrintTicketNamespace=http://schemas.marvell.com/windows/2003/08/printing/2035
+
+[HP LaserJet P2033]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2033n]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2034]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2034n]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2035]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2035n]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2036]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2036n]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2037]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2037n]
+Resolution=600
+PrintProcessor	=HP2030PrintProc
+DataType	=IMF
+
+[HP LaserJet P2033 XPS]
+Resolution=600
+
+[HP LaserJet P2033n XPS]
+Resolution=600
+
+[HP LaserJet P2034 XPS]
+Resolution=600
+
+[HP LaserJet P2034n XPS]
+Resolution=600
+
+[HP LaserJet P2035 XPS]
+Resolution=600
+
+[HP LaserJet P2035n XPS]
+Resolution=600
+
+[HP LaserJet P2036 XPS]
+Resolution=600
+
+[HP LaserJet P2036n XPS]
+Resolution=600
+
+[HP LaserJet P2037 XPS]
+Resolution=600
+
+[HP LaserJet P2037n XPS]
+Resolution=600
+
+[BinNameCassette]
+;TRANSLATE THIS SECTION
+1=Tray 1
+2=Tray 3
+3=Tray 2
+4=Manual Feed in Tray 1
+7=Auto Select
+
+[PapersPerBin]
+;Manual Feed
+4=1,5,9,7,258,11,70,13,264,263,265,43,82,20,37,34,28,27
+; Tray 1
+1=1,5,9,7,258,11,70,13,264,263,265,43,82,20,37,34,28,27
+;Tray2
+3=1,5,9,7,258,11,70,13
+;Tray 3
+2=1,5,9,7,258,11,70,13
+;Auto
+7=1,5,9,7,258,11,70,13,264,263,265,43,82,20,37,34,28,27
+
+[ATMOVE]
+HX0=-16,-16,-16,-16
+HX1=-12,-12,-12,-12
+
+[PaperName]
+;TRANSLATE THIS SECTION
+1  =Letter
+5  =Legal
+7  =Executive
+9  =A4
+11 =A5
+13 =B5 (JIS)
+20 =Envelope #10
+27 =Envelope DL
+28 =Envelope C5
+34 =Envelope B5
+37 =Envelope Monarch
+43 =Japanese Postcard
+70 =A6
+82 =Double Japan Postcard Rotated
+258=8.5 x 13
+263=16K 184x260
+264=16K 195x270
+265=16K 197x273
+
+[PaperSize]
+43=1000,1480,2
+82=1480,2000,2
+70=1050,1480,2
+258=850,1300,4
+263=1840,2600,2
+264=1950,2700,2
+265=1970,2730,2
+
+[MediaName]
+;TRANSLATE THIS SECTION
+1=Plain Paper
+2=Transparency
+258=Light (60 - 74 g/m²)
+260=Bond
+262=Heavy (111 - 130 g/m²)
+263=Rough
+265=Labels
+267=Envelope
+282=Mid-Weight (96 - 110 g/m²)
+283=Extra Heavy (131 - 175 g/m²)
+300=HP Office Paper
+301=HP Multipurpose Paper
+302=HP LaserJet Paper
+303=HP All-in-One Printing Paper
+304=HP Premium Choice LaserJet Paper
+512=Color
+513=Letterhead
+514=Preprinted
+515=Prepunched
+516=Recycled
+
+[DefaultPaper]
+2=1	; Canada
+500=1	; Falkland Islands
+501=1	; Belize
+502=1	; Guatemala
+503=1	; El Salvador
+504=1	; Honduras
+505=1	; Nicaragua
+506=1	; Costa Rica
+507=1	; Panama
+51=1	; Peru
+52=1	; Mexico
+54=1	; Argentina
+56=1	; Chile
+57=1	; Colombia
+58=1	; Venezuela
+591=1	; Bolivia
+592=1	; Guyana
+593=1	; Ecuador
+594=1	; French Guiana
+595=1	; Paraguay
+597=1	; Suriname
+598=1	; Uruguay
+
+[Halftone]
+PrintQuality600.Data21=HX0
+PrintQuality600.Data22=HX1
+
+[PTConstraints]
+Option1=//psf:Feature[@name="psk:JobNUpAllDocumentsContiguously"]/psf:Option
+Rule1=//psf:ParameterInit[@name="psk:PageScalingScale"]/psf:Value[.!='0' and .!='100']
+Option2=//psf:Feature[@name="psk:DocumentNUp"]/psf:Option
+Rule2=//psf:ParameterInit[@name="psk:PageScalingScale"]/psf:Value[.!='0' and .!='100']
+Option3=//psf:Feature[@name="psk:PageScaling"]/psf:Option
+Rule3=//psf:Feature[@name="psk:DocumentNUp"]/psf:Option/psf:ScoredProperty[@name="psk:PagesPerSheet"]/psf:Value[. > 1]
+Option4=//psf:Feature[@name="psk:PageScaling"]/psf:Option
+Rule4=//psf:Feature[@name="psk:JobNUpAllDocumentsContiguously"]/psf:Option/psf:ScoredProperty[@name="psk:PagesPerSheet"]/psf:Value[.>1]
+Option5=//psf:Feature[@name="psk:JobNUpAllDocumentsContiguously"]/psf:Option
+Rule5=//psf:Feature[@name="psk:DocumentNUp"]/psf:Option/psf:ScoredProperty[@name="psk:PagesPerSheet"]/psf:Value[. > 1]
+Option6=//psf:Feature[@name="psk:DocumentNUp"]/psf:Option
+Rule6=//psf:Feature[@name="psk:JobNUpAllDocumentsContiguously"]/psf:Option/psf:ScoredProperty[@name="psk:PagesPerSheet"]/psf:Value[. > 1]
+Option7=//psf:Feature[@name="psk:JobDuplexAllDocumentsContiguously"]/psf:Option[@name="psk:TwoSidedLongEdge"]
+Rule7=//psf:Feature[@name="psk:DocumentDuplex"]/psf:Option[@name!="psk:OneSided"]
+Option8=//psf:Feature[@name="psk:JobDuplexAllDocumentsContiguously"]/psf:Option[@name="psk:TwoSidedShortEdge"]
+Rule8=//psf:Feature[@name="psk:DocumentDuplex"]/psf:Option[@name!="psk:OneSided"]
+Option9=//psf:Feature[@name="psk:DocumentDuplex"]/psf:Option[@name="psk:TwoSidedLongEdge"]
+Rule9=//psf:Feature[@name="psk:JobDuplexAllDocumentsContiguously"]/psf:Option[@name!="psk:OneSided"]
+Option10=//psf:Feature[@name="psk:DocumentDuplex"]/psf:Option[@name="psk:TwoSidedShortEdge"]
+Rule10=//psf:Feature[@name="psk:JobDuplexAllDocumentsContiguously"]/psf:Option[@name!="psk:OneSided"]

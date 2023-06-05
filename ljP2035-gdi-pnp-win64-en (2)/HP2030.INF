@@ -1,0 +1,444 @@
+;
+; Copyright (c) 2012  Marvell Semicondductor, Inc.
+;
+; All rights reserved.
+;
+; HP2030.INF
+;  HP LaserJet P2030 SD driver
+;
+
+[Version]
+Signature		= "$Windows NT$"
+Provider		= Marvell
+ClassGUID		= {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class			= Printer
+DriverVer		= 06/27/2012, 3.0.1.52444
+CatalogFile.NTx86	= HP203032.CAT
+CatalogFile.NTamd64	= HP203064.CAT
+
+[Manufacturer]
+%MFG%		= HP,NTx86,NTamd64
+
+[HP]
+"HP LaserJet P2035" 	= HP2030, USBPRINT\Hewlett-PackardHP_La0E3B, Hewlett-PackardHP_La0E3B
+"HP LaserJet P2035n"	= HP2030, USBPRINT\Hewlett-PackardHP_La3FCE, Hewlett-PackardHP_La3FCE
+
+[HP.NTx86]
+"HP LaserJet P2035" 	= HP2030, USBPRINT\Hewlett-PackardHP_La0E3B, Hewlett-PackardHP_La0E3B
+"HP LaserJet P2035n"	= HP2030, USBPRINT\Hewlett-PackardHP_La3FCE, Hewlett-PackardHP_La3FCE
+
+[HP.NTamd64]
+"HP LaserJet P2035" 	= HP2030, USBPRINT\Hewlett-PackardHP_La0E3B, Hewlett-PackardHP_La0E3B
+"HP LaserJet P2035n"	= HP2030, USBPRINT\Hewlett-PackardHP_La3FCE, Hewlett-PackardHP_La3FCE
+
+[HP2030.NTx86]
+DriverVer 	= 06/27/2012, 3.0.1.52444
+CopyFiles	= DRV,SYSFILES,PRTPROCS,PRGFILES
+DataSection	= HP2030_DATA_NT
+
+[HP2030.NTamd64]
+DriverVer 	= 06/27/2012, 3.0.1.52444
+CopyFiles	= DRV,SYSFILES,PRTPROCS,PRGFILES
+DataSection	= HP2030_DATA_NT
+
+[HP2030_DATA_NT]
+DriverFile	= HP2030SD.DLL
+ConfigFile	= HP2030SU.DLL
+HelpFile	= hp2030sd.chm
+DataFile	= hp2030sd.sdd
+LanguageMonitor	= HP2030LM,HP2030LM.DLL
+DefaultDataType = RAW
+PrintProcessor	= HP2030PrintProc,HP2030PP.DLL
+
+[DRV]
+hp2030sd.dll
+hp2030su.dll
+hp2030su.ent
+hp2030su.ver
+hp2030sd.sdd
+hp2030sd.chm
+HP2030GC.dll
+HP2030PP.DLL
+
+[SYSFILES]
+HP2030LM.DLL
+HP2030SM.EXE
+HPMCoSetup.dll 
+hpsfs.dll 
+
+[PRTPROCS]
+HP2030PP.DLL
+
+[PRGFILES]
+HPC2030W.HTM
+HPC2015W.SWF
+HPC2015W.XML
+P2030BTN.JS
+P2030DEF.CSS
+P2030GLB.JS
+P2030OS.HTM
+P2030SIG.GIF
+P2030_A6_anim.htm
+P2030_A6_anim.swf
+
+[SourceDisksNames.x86]
+1 = %Location%,,,%LANGDIR%
+2 = %Location%,drv32.cab,,
+3 = %Location%,,,%LANGDIR%
+
+[SourceDisksNames.amd64]
+1 = %Location%,,,%LANGDIR%
+2 = %Location%,drv64.cab,,
+3 = %Location%,,,%LANGDIR%\x64
+
+[SourceDisksFiles]
+HP2030SM.EXE			= 3
+hp2030sd.dll			= 2
+hp2030su.dll			= 2
+HP2030GC.dll			= 2
+HP2030PP.dll			= 2
+HP2030LM.DLL			= 2
+hpsfs.dll   			= 2
+HPMCoSetup.dll			= 2
+hp2030su.ver			= 2
+hp2030su.ent			= 1
+hp2030sd.sdd			= 1
+hp2030sd.chm			= 1
+P2030OS.HTM		= 1
+HPC2030W.HTM		= 2
+HPC2015W.SWF		= 2
+HPC2015W.XML		= 2
+P2030BTN.JS		= 2
+P2030DEF.CSS		= 2
+P2030GLB.JS		= 2
+P2030SIG.GIF		= 2
+P2030_A6_anim.htm		= 2
+P2030_A6_anim.swf		= 2
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+SYSFILES	= 66002
+PRTPROCS	= 66001
+CoSetupEx_CopyFiles = 11 
+PRGFILES	= 16422,HP\HP LaserJet P2030 Series
+
+[HP2030.NTx86.CoInstallers]
+AddReg          = HP2030.NTx86.CoSetupEx_AddReg
+CopyFiles       = CoSetupEx_CopyFiles
+
+[HP2030.NTamd64.CoInstallers]
+AddReg          = HP2030.NTamd64.CoSetupEx_AddReg
+CopyFiles       = CoSetupEx_CopyFiles
+
+[HP2030.NTx86.CoSetupEx_AddReg]
+HKR,,CoInstallers32,0x10000,"HPMCoSetup.DLL,CoSetupEx"
+
+[HP2030.NTamd64.CoSetupEx_AddReg]
+HKR,,CoInstallers32,0x10000,"HPMCoSetup.DLL,CoSetupEx"
+
+[CoSetupEx_CopyFiles]
+HPMCoSetup.dll
+
+[Strings]
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+LANGDIR  = "ENGLISH"
+
+; Arabic
+[Strings.0001]
+LANGDIR     	= "Arabic"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Bulgarian
+[Strings.0002]
+LANGDIR     	= "Bulgarian"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Catalan
+[Strings.0003]
+LANGDIR     	= "Catalan"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Chinese-Simplified
+[Strings.0804]
+LANGDIR     	= "Simplified_Chinese"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Traditional_Chinese
+[Strings.0404]
+LANGDIR     	= "Traditional_Chinese"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Czech
+[Strings.0005]
+LANGDIR     	= "Cestina"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Danish
+[Strings.0006]
+LANGDIR     	= "Dansk"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; German
+[Strings.0007]
+LANGDIR     	= "Deutsch"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Greek
+[Strings.0008]
+LANGDIR     	= "Greek"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; English
+[Strings.0009]
+LANGDIR     	= "English"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Spanish
+[Strings.000a]
+LANGDIR     	= "Espanol"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Finnish
+[Strings.000b]
+LANGDIR     	= "Suomi"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; French
+[Strings.000c]
+LANGDIR     	= "Francais"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Hebrew
+[Strings.000d]
+LANGDIR     	= "Hebrew"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Hungarian
+[Strings.000e]
+LANGDIR     	= "Magyar"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Italian
+[Strings.0010]
+LANGDIR     	= "Italiano"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Korean
+[Strings.0012]
+LANGDIR     	= "Korean"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Dutch
+[Strings.0013]
+LANGDIR     	= "Nederlands"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Norwegian
+[Strings.0014]
+LANGDIR     	= "Norsk"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Polish
+[Strings.0015]
+LANGDIR     	= "Polski"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Portuguese
+[Strings.0016]
+LANGDIR     	= "Portugues"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Romanian
+[Strings.0018]
+LANGDIR     	= "Romanian"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Russian
+[Strings.0019]
+LANGDIR     	= "Russian"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Croatian
+[Strings.041a]
+LANGDIR     	= "Hrvatski"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Serbian
+[Strings.001a]
+LANGDIR     	= "Srpski"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Slovak
+[Strings.001b]
+LANGDIR     	= "Slovak"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Swedish
+[Strings.001d]
+LANGDIR     	= "Svenska"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Thai
+[Strings.001e]
+LANGDIR     	= "Thai"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Turkish
+[Strings.001f]
+LANGDIR     	= "Turkce"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Indonesian
+[Strings.0021]
+LANGDIR     	= "Indonesian"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Ukrainian
+[Strings.0022]
+LANGDIR     	= "Ukrainian"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Slovenian
+[Strings.0024]
+LANGDIR     	= "Slovenian"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Estonian
+[Strings.0025]
+LANGDIR     	= "Eesti"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Latvian
+[Strings.0026]
+LANGDIR     	= "Latviski"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Lithuanian
+[Strings.0027]
+LANGDIR     	= "Lietuviskai"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Vietnamese
+[Strings.002a]
+LANGDIR     	= "Viet_Nam"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
+; Kazakh
+[Strings.003f]
+LANGDIR     	= "Kazakh"
+Location	= "Driver Location"
+MS		= "Microsoft"
+Microsoft	= "Microsoft"
+MFG		= "HP"
+
